@@ -47,7 +47,9 @@ while true; do sleep 1000; done
 2)   in this file(display.desktop) write:
 
 [Desktop Entry]
+
 Name=PiCounter
+
 Exec=/home/nikita/start.sh
 
 3) SAVE FILE
