@@ -19,3 +19,38 @@ python3 app.py
 запускать app.py
 
 
+### create bash script
+
+1) in HOME DIRECTORY write:
+nano start.sh
+
+2) in this file write:
+
+#!/bin/bash
+
+cd mcroconrollers_curse_work/
+
+source .venv/bin/activate
+
+python3 app.py 
+
+while true; do sleep 1000; done
+
+3) save and exit
+
+4) chmod +x start.sh
+
+### auto setup program
+#### open terminal
+1)   sudo nano /etc/xdg/autostart/display.desktop
+
+2)   in this file(display.desktop) write:
+
+[Desktop Entry]
+Name=PiCounter
+Exec=/home/nikita/start.sh
+
+3) SAVE FILE
+
+4) sudo reboot
+
