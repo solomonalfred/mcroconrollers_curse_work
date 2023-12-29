@@ -11,4 +11,4 @@ def text_to_speech(text, lang='ru'):
 
 
 if __name__ == '__main__':
-    text_to_speech("Привет, как дела? Делаем курсач по микроконтроллерам")
+    text_to_speech("Захар любит электропиписьки")

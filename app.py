@@ -1,7 +1,8 @@
 import tkinter as tk
 from tkinter import filedialog
 from text_speech_core.text_speecher import text_to_speech
-from web_core.webcam import WebcamApp
+# from web_core.webcam import WebcamApp
+from web_core.polygon import CameraApp
 from paint_core.paint_window import PaintApp
 from image_to_text_core.image_to_text import image_text_analysis
 
@@ -27,7 +28,8 @@ class MainApp:
 
     def open_webcam(self):
         webcam_root = tk.Toplevel(self.root)
-        WebcamApp(webcam_root, "Камера")
+        CameraApp(webcam_root, "Камера")
+        # WebcamApp(webcam_root, "Камера")
 
     def select_files(self):
         filetypes = [('JPEG Files', '*.jpg'), ('All files', '*.*')]
